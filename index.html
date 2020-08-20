@@ -20,20 +20,20 @@
                 </div>
                 <div class="contact-block">
                     <a href="tel:+74999228974" class= "contact-block_text">+7 (499) 922-89-74</a>
-                    <button class=" button contact-block_button">заказать звонок</button>
+                    <button data-form="consultation" class=" button contact-block_button">заказать звонок</button>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <article class="Information">
-            <div class="wrapper2">
+            <div id="one" class="wrapper2">
                 <div class="container sec_article">
                     <div class="wrapper4">
                         <h1 class="heading">Подбор пульсометра </h1>
                     <h2 class="subheading">с учётом Вашего уровня подготовки</h2>
                     <a href="tel:+74999228974" class= "contact-block_text sec_mobile_class">+7 (499) 922-89-74</a>
-                    <button class=" button contact-block_button sec_mobile_class">заказать звонок</button>
+                    <button class="button contact-block_button sec_mobile_class" data-form="consultation">заказать звонок</button>
                     <div class="wrapper3">
                         <div class="wrapper_part">
                             <img src="img/first_section/app-08-hand-cart-64.png" alt="icon" class="wrapper_image">
@@ -43,7 +43,7 @@
 
                         </div>
                         <div class="wrapper_part">
-                            <img src="img/first_section/019_timer_time_stopwatch_2-64.png" alt="icon" class="wrapper_image">
+                            <img src="img/first_section/019_timer_time_stopwatch_2-64.png" alt="icon" class="wrapper_image wrapper_image_clock ">
                             <div class="wrapper_text">
                                 Бесплатная<br>доставка 
                             </div>
@@ -56,9 +56,9 @@
                             </div>
                         </div>
                     </div>
-                    <button class="button button_order">заказать кОНСУЛЬТАЦИЮ</button>
+                    <button class="button button_order" data-form="consultation">заказать кОНСУЛЬТАЦИЮ</button>
                     <div class="link">
-                        или <a class="link_to_shop" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                        или <a class="link_to_shop" href="#5">ПЕРЕЙТИ В КАТАЛОГ</a>
                     </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
     
                             </div>
                             <div class="wrapper_part">
-                                <img src="img/first_section/019_timer_time_stopwatch_2-64.png" alt="icon" class="wrapper_image">
+                                <img src="img/first_section/019_timer_time_stopwatch_2-64.png" alt="icon" class="wrapper_image wrapper_image_clock">
                                 <div class="wrapper_text">
                                     Бесплатная<br>доставка 
                                 </div>
@@ -88,9 +88,9 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="button button_order">заказать кОНСУЛЬТАЦИЮ</button>
+                        <button class="button button_order" data-form="consultation">заказать кОНСУЛЬТАЦИЮ</button>
                         <div class="link">
-                            или <a class="link_to_shop" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                            или <a class="link_to_shop" href="#5">ПЕРЕЙТИ В КАТАЛОГ</a>
                         </div>
     
                         </div>
@@ -109,7 +109,7 @@
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="wrepper-advantages_part">
-                    <img class="wrapper-advantages_image" src="img/second_section/heart.png" alt="icon">
+                    <img class="wrapper-advantages_image wrapper-advantages_image_heart" src="img/second_section/heart.png" alt="icon">
                     <div class="wrapper-advantages_text text2">
                         <span class="wrapper-advantages_span"> Заботимся о здоровье</span>
                         Мы работаем для того,<br>
@@ -137,9 +137,9 @@
                             Просто заполните форму заявки<br>
                             и мы перезвоним вам в течении 10 минут
                         </div>
-                        <form class="form form_left" action="#">
+                        <form class="form form_left" action="mailer/smart.php" method="POST">
                             <input type="text" placeholder="Ваше имя" required name="name">
-                            <input type="tel" placeholder="Ваш телефон" required name="phone">
+                            <input  placeholder="Ваш телефон" required name="phone">
                             <input type="email" placeholder="Ваш E-mail" required name="email">
                             <button class="button button_little">заказать кОНСУЛЬТАЦИЮ</button>
                         </form>
@@ -160,7 +160,7 @@
                 </div>
             </div>
         </section>
-        <section class="catalog">
+        <section id="5" class="catalog">
               <div class="container">
                         <div class="catalog__container">
                             <h2 class="header_black">Каталог пульсометров</h2>
@@ -764,15 +764,14 @@
                     <div class="col-md-10 offset-md-1">
                         <div class="add__block">
                             <div class="footer__block">
-                                Москва, Мясницкий проезд, д.3с1
-                                <br><br>
+                                <address>Москва, Мясницкий проезд, д.3с1</address>
                                 <a href="tel:+84999228974">8 (499) 922-89-74</a>
                                 <div class="footer__links-to-social-networks">
-                                    <div class="footer__links-item">
+                                    <div class="footer__links-item transform_class">
                                         <a href=""><i class="fab fa-facebook-f"></i></a>
                                     </div>
                                     <div class="footer__links-item">
-                                        <a href=""><i class="fab fa-instagram"></i></a>  
+                                        <a href=""><i class="fab fa-instagram"></i></a>
                                     </div>
                                     <div class="footer__links-item">
                                         <a href=""><i class="fab fa-pinterest-p"></i> </a>
@@ -786,8 +785,61 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.7512454906905!2d37.56333829385725!3d55.762823315735275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a2ce2ad982f%3A0x1b5684a1a6117666!2z0YPQuy4g0JrRgNCw0YHQvdCw0Y8g0J_RgNC10YHQvdGPLCA0NCDRgdGC0YDQvtC10L3QuNC1IDMsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjMwMjI!5e0!3m2!1sru!2sua!4v1597333911607!5m2!1sru!2sua" width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </footer>
     </main>
+    <div class="wrapper_form">
+        <div class="overlay">
+            <div id="consultation" class="modal">
+                <div class="modal__close">
+                    &times;
+                </div>
+                <div class="modal__title">
+                    Просто заполните форму заявки
+                </div>
+                <div class="modal__subtitle">
+                    и мы перезвоним вам в течении 10 минут
+                </div>
+                <form class="form form_left" action="mailer/smart.php" method="POST">
+                    <input type="text" placeholder="Ваше имя" required name="name">
+                    <input placeholder="Ваш телефон" required name="phone">
+                    <input type="email" placeholder="Ваш E-mail" required name="email">
+                    <button class="button button_little">заказать кОНСУЛЬТАЦИЮ</button>
+                </form>
+            </div>
+            <div id="order" class="modal">
+                <div class="modal__close">
+                    &times;
+                </div>
+                <div class="modal__title">
+                    Ваш заказ:
+                </div>
+                <div id="subtitle" class="modal__subtitle">
+                    None
+                </div>
+                <form class="form form_left" action="mailer/smart.php" method="POST">
+                    <input type="text" placeholder="Ваше имя" required name="name">
+                    <input placeholder="Ваш телефон" required name="phone">
+                    <input type="email" placeholder="Ваш E-mail" required name="email">
+                    <button class="button button_little">купить</button>
+                </form>
+            </div>
+            <div id="thanks" class="modal modal_mini">
+                <div class="modal__close">
+                    &times;
+                </div>
+                <div class="modal__title">
+                    Спасибо за вашу заявку!
+                </div>
+                <div class="modal__subtitle">
+                    Наш менеджер свяжется с вами 
+                        в ближайшее время!
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#one" class="up"><i class="fas fa-angle-double-up"></i>
+    </a>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/21897a4159.js"></script>
     <script src="js/script.js"></script>
